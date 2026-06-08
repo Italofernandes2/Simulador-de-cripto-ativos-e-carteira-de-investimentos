@@ -55,7 +55,7 @@ def comprar(abreviacao, valor_reais): #Gerencia a compra de ativos
         qnt = valor_reais / preco
         saldo_reais -= valor_reais
         carteira[abreviacao] += qnt
-        print (f" Comprado {qnt:.2f} {abreviacao} por R$ {valor_reais:.2f}")
+        print (f" Compra realizada: {qnt:.4f} {abreviacao} adicionados à carteira.")
 
 def vender(abreviacao, qtd): #Gerencia a venda de ativos
     global saldo_reais  # Permite alterar a variável que está fora do escopo da função
@@ -68,4 +68,4 @@ def vender(abreviacao, qtd): #Gerencia a venda de ativos
         total = qtd * preco             
         carteira[abreviacao] -= qtd          
         saldo_reais += total               
-        print(f"Vendido {qtd:.4f} {abreviacao} por R$ {total:.2f}")
+        print(f"Venda realizada: {qtd:.4f} {abreviacao} removidos da carteira de moedas.")
