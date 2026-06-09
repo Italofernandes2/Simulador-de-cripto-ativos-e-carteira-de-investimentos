@@ -1,6 +1,9 @@
 """
 Projeto avaliativo P2 - Simulador de criptos ativos e carteira de investimento 
-- Membros do grupo: Italo Fernandes, Gabriel Aralli, e Henry Campos
+- Membros do grupo: 
+Italo Fernandes: 02204826130031, 
+Gabriel Aralli: 0220482613007, 
+Henry Campos: 0220482613019
 """
 #Biblioteca random para trazer aleatoriedade para o preco da cripto
 import random
@@ -104,6 +107,8 @@ while opcao != "0":
         abreviacao = input("\nDigite o simbolo da cripto que deseja vender: ").upper()
         qtd = float(input("Digite a quantidade de cripto que deseja vender: "))
         vender(abreviacao, qtd) #Chama a função vender com os paramentros
+    elif opcao == "0":
+        print("\nSimulação finalziada.")
     else:
         print("Opção inválida. Tente novamente.")
         
